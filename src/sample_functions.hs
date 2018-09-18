@@ -13,5 +13,5 @@ fib :: Int -> Int
 fib x = fibHelper x 0 1
   where fibHelper y a b
         | y == 0 = a -- previous value
-		| y == 1 = b -- next value
-		| otherwise = fibHelper (y-1) b (a+b)
+        | y == 1 = b -- next value
+        | otherwise = fibHelper (y-1) b (a+b)
