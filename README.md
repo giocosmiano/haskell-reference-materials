@@ -1,3 +1,1 @@
-### My personal scratch pad learning Haskell
-
-#### It includes excellent reference materials from Philip Wadler, Simon Peyton Jones, Bartosz Milewski and others.
+### My personal reference materials learning [Haskell](https://www.haskell.org/) from [Philip Wadler](http://homepages.inf.ed.ac.uk/wadler/), [Simon Peyton Jones](https://www.microsoft.com/en-us/research/people/simonpj/), [Bartosz Milewski](https://bartoszmilewski.com/) and others.
