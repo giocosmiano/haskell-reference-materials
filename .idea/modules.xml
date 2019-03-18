@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/haskell-scratchpad-and-materials.iml" filepath="$PROJECT_DIR$/.idea/haskell-scratchpad-and-materials.iml" />
+      <module fileurl="file://$PROJECT_DIR$/haskell-reference-materials.iml" filepath="$PROJECT_DIR$/haskell-reference-materials.iml" />
     </modules>
   </component>
 </project>
