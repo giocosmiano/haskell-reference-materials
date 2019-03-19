@@ -24,6 +24,9 @@ runWithOptions opts =
 
 -- |
 -- e.g.
+-- $ stack exec -- optex Gio
+-- Enjoy the snow, Gio!
+--
 -- $ stack exec -- optex Gio -e
 -- ENJOY THE SNOW, GIO!
 --
