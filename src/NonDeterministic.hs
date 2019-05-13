@@ -12,29 +12,27 @@ import Control.Monad (guard)
 -- A different way of encoding this is to start an independent concurrent computation for each of the choices, at once,
 -- producing the final results without any inherent order.
 --
--- Non-deterministic samples
---
--- with List Monad
--- Prelude> :{
--- sampleListMonad = do
---   x <- [1, 2]     -- if x is 1 or 2
---   y <- [4, 5, 6]  -- and y is 4, 5, or 6
---   return (x + y)  -- then what are the possible values of x + y?
--- :}
--- Prelude> sampleListMonad
+-- Prelude> nonDeterministicListMonad
 -- [5,6,7,6,7,8]
 --
--- OR
--- with List Applicative
--- Prelude> (+) <$> [1,2] <*> [4,5,6]
+-- Prelude> nonDeterministicListApplicative
 -- [5,6,7,6,7,8]
 --
--- OR
--- with List comprehension
--- Prelude> [x + y | x <- [1,2], y <- [4,5,6]]
+-- Prelude> nonDeterministicListComprehension
 -- [5,6,7,6,7,8]
 --
 
+xs = [1, 2]
+ys = [4, 5, 6]
+
+nonDeterministicListMonad = do
+  x <- xs         -- if x is 1 or 2
+  y <- ys         -- and y is 4, 5, or 6
+  return (x + y)  -- then what are the possible values of x + y?
+
+nonDeterministicListApplicative = (+) <$> xs <*> ys
+
+nonDeterministicListComprehension = [x + y | x <- xs, y <- ys]
 
 -- |
 -- More references related to non-deterministic List monad
